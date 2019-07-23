@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-import bean.Car;
+import com.revature.bean.Car;
 
 public interface CarDAO {
 	public List<Car> getCar()

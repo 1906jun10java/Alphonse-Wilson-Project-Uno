@@ -1,4 +1,4 @@
-package bean;
+package com.revature.bean;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-import bean.VariableCheck;
+import com.revature.bean.VariableCheck;
 import com.revature.dao.UserDAOImpl;
 import com.revature.util.ConnFactory;
 public class CustomerFunctions {

@@ -10,10 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import bean.CustomerFunctions;
-import bean.Offer;
-import bean.Owned;
-import bean.User;
+import com.revature.bean.CustomerFunctions;
+import com.revature.bean.Offer;
+import com.revature.bean.Owned;
+import com.revature.bean.User;
 import com.revature.util.ConnFactory;
 
 

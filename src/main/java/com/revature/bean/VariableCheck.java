@@ -1,4 +1,4 @@
-package bean;
+package com.revature.bean;
 
 //test
 //trying to push Alphonse

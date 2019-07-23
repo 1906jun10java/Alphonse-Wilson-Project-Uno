@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-import bean.User;
+import com.revature.bean.User;
 
 public interface UserDAO {
 	

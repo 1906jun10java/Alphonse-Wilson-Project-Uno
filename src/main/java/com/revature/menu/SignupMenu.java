@@ -3,9 +3,9 @@ package com.revature.menu;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import bean.NewUser;
-import bean.SignupFunctions;
-import bean.User;
+import com.revature.bean.NewUser;
+import com.revature.bean.SignupFunctions;
+import com.revature.bean.User;
 
 
 public class SignupMenu{

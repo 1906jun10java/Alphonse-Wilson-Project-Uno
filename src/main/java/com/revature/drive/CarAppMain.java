@@ -1,6 +1,6 @@
 package com.revature.drive;
 
-import bean.User;
+import com.revature.bean.User;
 import com.revature.menu.CustomerMenu;
 import com.revature.menu.EmployeeMenu;
 import com.revature.menu.Login;

@@ -1,4 +1,4 @@
-package bean;
+package com.revature.bean;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

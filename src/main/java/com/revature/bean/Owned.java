@@ -1,4 +1,4 @@
-package bean;
+package com.revature.bean;
 
 public class Owned {
 	private int offer_id;

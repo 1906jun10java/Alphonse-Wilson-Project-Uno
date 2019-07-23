@@ -1,4 +1,4 @@
-package bean;
+package com.revature.bean;
 
 public class User {
 	protected String userName;

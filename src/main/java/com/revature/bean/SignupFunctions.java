@@ -1,13 +1,14 @@
-package bean;
+package com.revature.bean;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-import bean.User;
+
+import com.revature.bean.NewUser;
+import com.revature.bean.User;
 import com.revature.util.ConnFactory;
-import bean.NewUser;
 public class SignupFunctions {
 	public static ConnFactory cf= ConnFactory.getInstance();
 	public static Connection conn = cf.getConnection();

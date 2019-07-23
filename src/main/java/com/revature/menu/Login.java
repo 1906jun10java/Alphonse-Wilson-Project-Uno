@@ -3,9 +3,9 @@ package com.revature.menu;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import bean.LoginFunctions;
-import bean.User;
-import bean.VariableCheck;
+import com.revature.bean.LoginFunctions;
+import com.revature.bean.User;
+import com.revature.bean.VariableCheck;
 import com.revature.dao.UserDAOImpl;
 
 public class  Login extends VariableCheck{

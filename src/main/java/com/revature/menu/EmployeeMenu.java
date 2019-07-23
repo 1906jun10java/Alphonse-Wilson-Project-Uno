@@ -2,9 +2,12 @@ package com.revature.menu;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import bean.User;
-import bean.VariableCheck;
-import bean.*;
+import com.revature.bean.CustomerFunctions;
+import com.revature.bean.EmployeeFunctions;
+import com.revature.bean.User;
+import com.revature.bean.VariableCheck;
+
+import com.revature.bean.*;
 
 public class EmployeeMenu extends EmployeeFunctions{
 	public User LoginEmployee(User user) {

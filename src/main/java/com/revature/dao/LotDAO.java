@@ -3,7 +3,7 @@ package com.revature.dao;
 import java.sql.SQLException;
 import java.util.List;
 
-import bean.Car;
+import com.revature.bean.Car;
 
 public interface LotDAO {
 

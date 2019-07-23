@@ -1,4 +1,4 @@
-package bean;
+package com.revature.bean;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,14 +9,11 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import com.revature.bean.Offer;
 import com.revature.dao.CarDAO;
 
 import com.revature.dao.UserDAOImpl;
-import bean.Offer;
-
-
-
-
 import com.revature.util.ConnFactory;
 
 

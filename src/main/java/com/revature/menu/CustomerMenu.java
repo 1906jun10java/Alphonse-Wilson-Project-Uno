@@ -4,11 +4,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+import com.revature.bean.CustomerFunctions;
+import com.revature.bean.User;
+import com.revature.bean.VariableCheck;
 import com.revature.util.ConnFactory;
-
-import bean.CustomerFunctions;
-import bean.User;
-import bean.VariableCheck;
 
 public class CustomerMenu{
 
