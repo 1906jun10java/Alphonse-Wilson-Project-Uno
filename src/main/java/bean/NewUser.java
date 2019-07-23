@@ -7,7 +7,7 @@ public class NewUser {
 	private String userName;
 	private String password;
 	private boolean confirmPassword;
-	private String firstName;
+	private String firstName; 
 	private String LastName;
 	private boolean employee;
 	private boolean customer; 
