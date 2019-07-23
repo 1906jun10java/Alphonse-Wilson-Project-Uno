@@ -10,7 +10,7 @@ public class NewUser {
 	private String firstName;
 	private String LastName;
 	private boolean employee;
-	private boolean customer;
+	private boolean customer; 
 	public String phone;
 	public String email;
 	private int managerId;
