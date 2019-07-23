@@ -1,11 +1,12 @@
 package com.revature.bean;
 
 public class User {
-	protected String userName;
-	protected String userPass;
-	protected boolean employee;
-	protected boolean customer;
-	protected String travelTo ;
+	
+	private String userName;
+	private String userPass;
+	private boolean employee;
+	private boolean customer;
+	private String travelTo ;
 	private int userId;
 	private String empCust;
 	private int car_id;
@@ -28,15 +29,30 @@ public class User {
 	public void setOwned_amount_left(int owned_amount_left) {
 		this.owned_amount_left = owned_amount_left;
 	}
-	public User() {
-		super();
-	}
+	
 	public User(int userId, String userName, String userPass, String userType) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
 		this.userPass = userPass;
 		this.userType = userType;
+	}
+	public User(int userId,String firstname, String lastname, String username, String email) {
+		super();
+		this.userId = userId;
+		this.user_FirstName = firstname;
+		this.user_LastName = lastname;
+		this.userName = username;
+		this.user_email = email;
+	}
+	public User(String firstname, String lastname, String username, String email) {
+		super();
+		this.user_FirstName = firstname;
+		this.user_LastName = lastname;
+		this.userName = username;
+		this.user_email = email;
+	}
+	public User() {
 	}
 	
 	public String getUser() {
@@ -180,6 +196,57 @@ public class User {
 	}
 	public void setUser_LastName(String user_LastName) {
 		this.user_LastName = user_LastName;
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((user_email == null) ? 0 : user_email.hashCode());
+		result = prime * result + ((user_FirstName == null) ? 0 : user_FirstName.hashCode());
+		result = prime * result + userId;
+		result = prime * result + ((user_LastName == null) ? 0 : user_LastName.hashCode());
+		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
+		return result;
+	}
+	
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		if (user_email == null) {
+			if (other.user_email != null)
+				return false;
+		} else if (!user_email.equals(other.user_email))
+			return false;
+		if (user_FirstName == null) {
+			if (other.user_FirstName != null)
+				return false;
+		} else if (!user_FirstName.equals(other.user_FirstName))
+			return false;
+		if (userId != other.userId)
+			return false;
+		if (user_LastName == null) {
+			if (other.user_LastName != null)
+				return false;
+		} else if (!user_LastName.equals(other.user_LastName))
+			return false;
+		if (userName == null) {
+			if (other.userName != null)
+				return false;
+		} else if (!userName.equals(other.userName))
+			return false;
+		return true;
+	}
+	@Override
+	public String toString() {
+		return "User [id=" + userId + ", firstname=" + user_FirstName + ", lastname=" + user_LastName + ", username=" + userName
+				+ ", email=" + user_email + "]";
 	}
 
 }
