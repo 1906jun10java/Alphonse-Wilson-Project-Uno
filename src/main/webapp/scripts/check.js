@@ -1,10 +1,4 @@
-//window.onload = function() {
-//	validate();
-//}
-//function validate() {
-//    let user = {username:document.getElementById("username")};
-//
-//  
+
 
 let user = {};
 
@@ -14,14 +8,14 @@ window.onload = function() {
 
 function populateUser() {
 	// send a GET request to SessionServlet to obtain session information
-	fetch("http://localhost:8082/ServletDemo/session").then(function(response) {
+	fetch("http://localhost:8082/ProjectUno/session").then(function(response) {
 		return response.json(); // parsing json data in the response as a JS object
 	}).then(function(data) {
 		console.log(data);
 		// check whether there is a valid session
 		//define behavior for when there is no valid user
 		if(data.session === null) {
-			window.location = "http://localhost:8082/ServletDemo/login"
+			window.location = "http://localhost:8082/ProjectUno/"
 		} else {
 			//define behavior for when a user is returned
 			user = data;

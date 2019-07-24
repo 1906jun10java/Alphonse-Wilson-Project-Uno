@@ -80,15 +80,7 @@ public class  Login extends VariableCheck{
 								}
 								if (user.getEmployee() == true ) {
 									user.setTravelTo("customer");
-								}
-								
-					
-							
-							
-						
-		        		
-		        		
-		        		
+								}		
 		        		
 		        	}
 		        	//call or maker function here to compare the 

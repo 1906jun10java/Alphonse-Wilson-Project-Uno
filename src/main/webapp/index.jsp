@@ -21,8 +21,8 @@
                 <fieldset>
                     
                     <legend>Position:</legend>
-                    <input type="radio" name="position" value="employee" checked> Employee
-                    <input type="radio" name="position" value="manager"> Manager<br>
+                    <input type="radio" name="position" value="Employee" checked> Employee
+                    <input type="radio" name="position" value="Manager"> Manager<br>
                 </fieldset>
                 <br>
                 <input type="submit" value="login"/>

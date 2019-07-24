@@ -4,6 +4,7 @@ public class User {
 	
 	private String userName;
 	private String userPass;
+	private boolean success;
 	private boolean employee;
 	private boolean customer;
 	private String travelTo ;
@@ -247,6 +248,12 @@ public class User {
 	public String toString() {
 		return "User [id=" + userId + ", firstname=" + user_FirstName + ", lastname=" + user_LastName + ", username=" + userName
 				+ ", email=" + user_email + "]";
+	}
+	public boolean getSuccess() {
+		return success;
+	}
+	public void setSuccess(boolean success) {
+		this.success = success;
 	}
 
 }
