@@ -56,7 +56,7 @@ public class MyServlet extends HttpServlet {
 		// grab credentials from request
 		Credentials creds = new Credentials(request.getParameter("username"), request.getParameter("password"), request.getParameter("position"));
 		User u = authService.authenticateUser(creds);
-		if (u.getSuccess() == true) {
+		if (u != null) {
 			// set user information as session attributes (not request attributes)
 			session.setAttribute("userId", u.getUserId());
 			session.setAttribute("username", u.getUser());
@@ -66,15 +66,12 @@ public class MyServlet extends HttpServlet {
 			session.setAttribute("problem", null);
 			// resp.getWriter().write("welcome, "+u.getFirstname()+" "+u.getLastname());
 			// redirect user to their profile page if authenticated
-			if(request.getParameter("position").equals("Manager")) {
+			if(request.getParameter("position").equals("manager")) {
 				response.sendRedirect("manager");
 			}
-			else if(request.getParameter("position").equals("Employee")) {
+			else {
 				response.sendRedirect("employee");
 				
-			}
-			else {
-				response.sendRedirect("MyServlet");
 			}
 			
 		} else {
