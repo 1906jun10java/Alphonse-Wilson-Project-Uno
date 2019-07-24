@@ -38,8 +38,10 @@ public class MyServlet extends HttpServlet {
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 	
 	//	response.sendRedirect("employee");
-//		response.sendRedirect("manager");
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		//response.sendRedirect("manager");
+		response.sendRedirect("index.jsp");
+		
+		//request.getRequestDispatcher("index.jsp").forward(request, response);
 		
 	}
 
@@ -52,7 +54,7 @@ public class MyServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		// grab credentials from request
-		Credentials creds = new Credentials(request.getParameter("username"), request.getParameter("password"));
+		Credentials creds = new Credentials(request.getParameter("username"), request.getParameter("password"), request.getParameter("position"));
 		User u = authService.authenticateUser(creds);
 		if (u != null) {
 			// set user information as session attributes (not request attributes)
@@ -64,7 +66,14 @@ public class MyServlet extends HttpServlet {
 			session.setAttribute("problem", null);
 			// resp.getWriter().write("welcome, "+u.getFirstname()+" "+u.getLastname());
 			// redirect user to their profile page if authenticated
-			response.sendRedirect("employee");
+			if(request.getParameter("position").equals("manager")) {
+				response.sendRedirect("manager");
+			}
+			else {
+				response.sendRedirect("employee");
+				
+			}
+			
 		} else {
 			
 			// what if the creds are wrong?

@@ -2,10 +2,11 @@ package com.revature.bean;
 
 public class Credentials {
 
-	public Credentials(String username, String password) {
+	public Credentials(String username, String password, String position) {
 		super();
 		this.username = username;
 		this.password = password;
+		this.position = position;
 	}
 
 	public Credentials() {
@@ -13,6 +14,7 @@ public class Credentials {
 
 	private String username;
 	private String password;
+	private String position;
 
 	public String getUsername() {
 		return username;
@@ -28,6 +30,13 @@ public class Credentials {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getPosition() {
+		return position;
+	}
+
+	public void setPosition(String position) {
+		this.position = position;
 	}
 
 	@Override
@@ -63,7 +72,7 @@ public class Credentials {
 
 	@Override
 	public String toString() {
-		return "Credentials [username=" + username + ", password=" + password + "]";
+		return "Credentials [username=" + username + ", password=" + password + ", position=" + position + "]";
 	}
 
 }
