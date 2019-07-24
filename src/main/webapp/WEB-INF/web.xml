@@ -11,6 +11,7 @@
     <welcome-file>employee.html</welcome-file>
     <welcome-file>manager.html</welcome-file>
   </welcome-file-list>
+  
   <servlet>
     <description></description>
     <display-name>MyServlet</display-name>
@@ -32,9 +33,6 @@
   </servlet-mapping>
   
   
-  
-  
-  
   <servlet>
     <servlet-name>manager</servlet-name>
     <servlet-class>com.revature.servlet.managerServlet</servlet-class>
@@ -45,14 +43,26 @@
   </servlet-mapping>
   
   
-   <servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.revature.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
     <description></description>
-    <display-name>Logout</display-name>
-    <servlet-name>Logout</servlet-name>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
     <servlet-class>com.revature.servlet.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Logout</servlet-name>
+    <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/logout</url-pattern>
   </servlet-mapping>
   

@@ -21,7 +21,7 @@ public class LogoutServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
- 
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -30,12 +30,9 @@ public class LogoutServlet extends HttpServlet {
 		HttpSession session = request.getSession(false);
 		if (session != null) {
 			session.invalidate();
-			
-			System.out.println("session has been invailidated");
 		}
 		// redirect back to login
-		request.getRequestDispatcher("MyServlet").forward(request, response);
-		//response.sendRedirect("MyServlet");
+		response.sendRedirect("MyServlet");
 	}
 
 	/**
