@@ -39,7 +39,7 @@ public class MyServlet extends HttpServlet {
 	
 	//	response.sendRedirect("employee");
 		//response.sendRedirect("manager");
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("index.html");
 		
 		//request.getRequestDispatcher("index.jsp").forward(request, response);
 		
