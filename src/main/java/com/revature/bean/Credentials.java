@@ -75,6 +75,4 @@ public class Credentials {
 		return "Credentials [username=" + username + ", password=" + password + ", position=" + position + "]";
 	}
 
-	
-
 }

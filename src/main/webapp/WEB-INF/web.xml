@@ -52,26 +52,17 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
   
-  <servlet>
-    <servlet-name>session</servlet-name>
-    <servlet-class>com.revature.servlet.SessionServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>session</servlet-name>
-    <url-pattern>/session</url-pattern>
-  </servlet-mapping>
-  
   
   
   
   <servlet>
     <description></description>
     <display-name>LogoutServlet</display-name>
-    <servlet-name>Logout</servlet-name>
+    <servlet-name>LogoutServlet</servlet-name>
     <servlet-class>com.revature.servlet.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Logout</servlet-name>
+    <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/logout</url-pattern>
   </servlet-mapping>
   

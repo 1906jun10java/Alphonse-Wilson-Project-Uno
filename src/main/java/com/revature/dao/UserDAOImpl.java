@@ -165,6 +165,7 @@ public List<User> getUserid(User user) throws SQLException{
 			while(rs.next()) {
 				User temp = new User();
 				temp.setUserId(rs.getInt(1));
+			
 			//	customer.getProfile(user);
 				System.out.println(temp.getUserId());
 				temp.setUser(rs.getString(9));
@@ -190,19 +191,19 @@ public List<User> getUserid(User user) throws SQLException{
 				int user_ManagerId = rs.getInt("MYMANAGER");
 				String user_name = rs.getString("username");
 				String user_pass = rs.getString("PASS");
-				System.out.println(user_id);
-				
+				user.setUser_id(user_id);
 				System.out.println(user.getUser_id()+"#############");
-//				user.setUser_id(user_id);
-//				user.setUser_name(user_name);
-//				user.setUser_pass(user_pass);
-//				user.setUser_FirstName(user_FirstName);
-//				user.setUser_LastName(user_LastName);
-//				user.setUser_Phone(user_Phone);
-//				user.setUser_email(user_email);
-//				user.setUser_ManagerId(user_ManagerId);
-//				user.setUser_position(user_position);
-//				user.setUser_id(user_id);
+				user.setUser_name(user_name);
+				user.setUser_pass(user_pass);
+				user.setUser_FirstName(user_FirstName);
+				user.setUser_LastName(user_LastName);
+				user.setUser_Phone(user_Phone);
+				user.setUser_email(user_email);
+				user.setUser_ManagerId(user_ManagerId);
+				user.setUser_position(user_position);
+								
+				
+				user.setUser_id(user_id);
 				
 			}
 			

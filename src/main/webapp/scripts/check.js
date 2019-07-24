@@ -1,5 +1,3 @@
-
-
 let user = {};
 
 window.onload = function() {
@@ -8,10 +6,8 @@ window.onload = function() {
 
 function populateUser() {
 	// send a GET request to SessionServlet to obtain session information
-//	fetch("http://localhost:8082/ProjectUno/session").then(function(response) {
 	fetch("http://localhost:8082/ProjectUno/session").then(function(response) {
-
-	return response.json(); // parsing json data in the response as a JS object
+		return response.json(); // parsing json data in the response as a JS object
 	}).then(function(data) {
 		console.log(data);
 		// check whether there is a valid session
